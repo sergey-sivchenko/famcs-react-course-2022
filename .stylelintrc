@@ -1,7 +1,14 @@
 {
   "$schema": "http://json.schemastore.org/stylelintrc",
   "extends": ["stylelint-config-standard", "stylelint-config-prettier"],
+  "overrides": [
+    {
+      "files": ["**/*.{js,jsx}"],
+      "customSyntax": "@stylelint/postcss-css-in-js"
+    }
+  ],
   "rules": {
-    "color-hex-length": "long"
+    "color-hex-length": "long",
+    "function-no-unknown": [true, { "ignoreFunctions": ["/$/"] }]
   }
 }
