@@ -9,6 +9,8 @@
   ],
   "rules": {
     "color-hex-length": "long",
-    "function-no-unknown": [true, { "ignoreFunctions": ["/$/"] }]
+    "function-name-case": null,
+    "function-no-unknown": [true, { "ignoreFunctions": ["/$/"] }],
+    "value-keyword-case": null
   }
 }
