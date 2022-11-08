@@ -1,5 +1,5 @@
 import { useMemo, useState } from "react";
-import { createGlobalStyle, ThemeProvider } from "styled-components";
+import { createGlobalStyle, ThemeProvider } from "styled-components/macro";
 
 import Main from "pages/Main";
 import { createTheme } from "utils/theme";
