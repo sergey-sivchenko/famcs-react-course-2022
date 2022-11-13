@@ -23,15 +23,15 @@
     "web-vitals": "^2.1.4"
   },
   "devDependencies": {
-    "@commitlint/cli": "^17.1.2",
-    "@commitlint/config-conventional": "^17.1.0",
+    "@commitlint/cli": "^17.2.0",
+    "@commitlint/config-conventional": "^17.2.0",
     "@stylelint/postcss-css-in-js": "^0.38.0",
     "@testing-library/jest-dom": "^5.16.5",
     "@testing-library/react": "^13.4.0",
-    "@testing-library/user-event": "^13.5.0",
+    "@testing-library/user-event": "^14.4.3",
     "eslint-config-prettier": "^8.5.0",
-    "eslint-plugin-jest-dom": "^4.0.2",
-    "husky": "^8.0.1",
+    "eslint-plugin-jest-dom": "^4.0.3",
+    "husky": "^8.0.2",
     "imagemin-lint-staged": "^0.5.1",
     "jest-styled-components": "^7.1.1",
     "lint-staged": "^13.0.3",
@@ -40,8 +40,8 @@
     "react-scripts": "5.0.1",
     "react-test-renderer": "^18.2.0",
     "source-map-explorer": "^2.5.3",
-    "stylelint": "^14.14.0",
-    "stylelint-config-prettier": "^9.0.3",
+    "stylelint": "^14.15.0",
+    "stylelint-config-prettier": "^9.0.4",
     "stylelint-config-standard": "^29.0.0"
   },
   "browserslist": {
