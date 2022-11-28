@@ -1,4 +1,4 @@
-import storage from "..";
+import storage from "api";
 
 const TODOS_STORAGE_KEY = "todos";
 
@@ -14,8 +14,6 @@ const TODOS_STORAGE_KEY = "todos";
 
 export const getTodos = async () => {
   const todos = await storage.getItem(TODOS_STORAGE_KEY);
-
-  console.log(todos);
 
   return todos || [];
 };
