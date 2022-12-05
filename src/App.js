@@ -1,7 +1,9 @@
 import { useMemo, useState } from "react";
+import { Provider as StoreProvider } from "react-redux";
 import { createGlobalStyle, ThemeProvider } from "styled-components/macro";
 
 import Main from "pages/Main";
+import { configureAppStore } from "store";
 import { createTheme } from "utils/theme";
 
 const GlobalStyle = createGlobalStyle`
@@ -15,6 +17,8 @@ const GlobalStyle = createGlobalStyle`
     margin: 0;
   }
 `;
+
+const store = configureAppStore();
 
 const App = () => {
   const [mode, setMode] = useState("dark");
@@ -30,10 +34,12 @@ const App = () => {
   const theme = useMemo(() => createTheme(mode), [mode]);
 
   return (
-    <ThemeProvider theme={theme}>
-      <GlobalStyle />
-      <Main toggleMode={toggleMode} />
-    </ThemeProvider>
+    <StoreProvider store={store}>
+      <ThemeProvider theme={theme}>
+        <GlobalStyle />
+        <Main toggleMode={toggleMode} />
+      </ThemeProvider>
+    </StoreProvider>
   );
 };
 
